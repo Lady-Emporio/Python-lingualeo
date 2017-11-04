@@ -1,0 +1,3 @@
+﻿utf-8
+1.0 All work.
+2.0 add path notes and change content (use Great Britain voise and 1000+ words)
