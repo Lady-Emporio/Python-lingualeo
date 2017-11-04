@@ -86,7 +86,7 @@ class Button(Qt.QPushButton):
         #pass
         global ex
         n=getCountWords()
-        print(ex,n)
+        #print(ex,n)
         ex.run(n)
 
 
@@ -103,7 +103,11 @@ class Example(Qt.QWidget):
         ru_to_translate = translate["ru"]
         self.setWindowTitle("Lingualeo and Python(PyQt5)")
         #self.resize(480,600)
-        print(self.vbox.count())
+        #print(self.vbox.count())
+        for i in reversed(range(self.vbox.count())):
+            self.vbox.itemAt(i).widget().setParent(None)
+
+
         list_buttom=[Button("",i) for i in range(3*4)]
         self.vbox.addWidget(Button(eng_to_translate,"NoClick"), 0, 0,1,4)
         refresh_but=Button("refresh", "refresh")
