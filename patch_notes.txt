@@ -1,3 +1,4 @@
 ﻿utf-8
 1.0 All work.
 2.0 add path notes and change content (use Great Britain voise and 1000+ words)
+2.1 add Qt.QSizePolicy (buttom expand in all space, can use all windows, but size not optimised)

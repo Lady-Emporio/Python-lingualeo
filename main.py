@@ -62,6 +62,8 @@ class Button(Qt.QPushButton):
         self.setText(str(text))
         self.nomber=nomber
         self.audio=self.ru_to_translate=None
+
+        self.setSizePolicy(Qt.QSizePolicy.Preferred, Qt.QSizePolicy.Expanding);
         if self.nomber=="refresh":
             self.clicked.connect(self.refresh)
         elif self.nomber!="NoClick":
